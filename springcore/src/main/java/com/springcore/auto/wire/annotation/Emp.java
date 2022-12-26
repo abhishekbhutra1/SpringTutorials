@@ -1,9 +1,13 @@
 package com.springcore.auto.wire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
+	
+	//@Qualifier annotation is used when one or more bean have same return type but different name.
 	@Autowired
+	@Qualifier("sherlockAddress")
 	private Address address;
 
 	public Address getAddress() {
