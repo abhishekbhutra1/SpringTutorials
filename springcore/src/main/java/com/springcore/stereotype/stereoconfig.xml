@@ -21,4 +21,7 @@
 		   <value>Delhi</value>
 	</util:list>
    
+   <bean class="com.springcore.stereotype.Teacher" name="teacher" scope="prototype">
+	   <property name="subject" value="Maths"/>
+   </bean>
  </beans>
